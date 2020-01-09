@@ -41,7 +41,7 @@ Check: "Ensure the S3 bucket has access logging enabled"
 		85 |   # checkov:skip=CKV_AWS_20: The bucket is a public static content host
 		86 |   acl           = "public-read"
 		87 |   force_destroy = true
-		88 |    # checkov:skip=CKV_AWS_19: Bucket access logs is not required for public content
+		88 |    # checkov:skip=CKV_AWS_19: Bucket access logs is not required for public content 2
 		89 |   tags = {
 		90 |     Name = "${local.bucket_name}-${data.aws_caller_identity.current.account_id}"
 		91 |   }
